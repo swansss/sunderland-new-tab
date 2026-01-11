@@ -3,6 +3,9 @@
   Colors: Red (#EB172B), White (#FFFFFF), Black (#1A1A1A)
 */
 
+/* Industry Inc Base - SAFC official font */
+@import url('https://fonts.cdnfonts.com/css/industry-inc-base');
+
 /* Reset default browser styling */
 * {
   margin: 0;
@@ -13,7 +16,7 @@
 /* The body creates the famous red and white stripes */
 body {
   min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Industry Inc Base', sans-serif;
 
   /* This creates the vertical stripes! */
   /* repeating-linear-gradient draws stripes that repeat across the screen */
