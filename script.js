@@ -57,7 +57,39 @@ function displayRandomPlayer() {
   document.getElementById('player-position').textContent = player.position;
   document.getElementById('player-nationality').textContent = player.nationality;
   document.getElementById('player-age').textContent = `${player.age} years old`;
-  document.getElementById('fun-fact').textContent = `"${funFact}"`;
+
+  // Display where the player was signed from
+  document.getElementById('player-signed-from').innerHTML = `
+    <span class="label">Signed From</span>
+    <span class="value">${player.signedFrom}</span>
+  `;
+
+  // Display other positions (only if they have any)
+  const otherPositionsEl = document.getElementById('player-other-positions');
+  if (player.otherPositions && player.otherPositions.length > 0) {
+    const positionTags = player.otherPositions
+      .map(pos => `<span class="position-tag">${pos}</span>`)
+      .join('');
+    otherPositionsEl.innerHTML = `
+      <span class="label">Can Also Play</span><br>
+      ${positionTags}
+    `;
+    otherPositionsEl.style.display = 'block';
+  } else {
+    otherPositionsEl.style.display = 'none';
+  }
+
+  // Display playing style
+  document.getElementById('player-style').innerHTML = `
+    <span class="label">Playing Style</span>
+    ${player.playingStyle}
+  `;
+
+  // Display random fun fact
+  document.getElementById('fun-fact').innerHTML = `
+    <span class="label">Did You Know?</span>
+    "${funFact}"
+  `;
 }
 
 // ============================================

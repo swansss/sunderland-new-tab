@@ -3,8 +3,7 @@
 
   To update this data:
   1. Change player info, add new players, or remove players from the 'players' array
-  2. Update the 'nextFixture' object before each match
-  3. Save the file and refresh your new tab!
+  2. Save the file and refresh your new tab!
 */
 
 const sunderlandData = {
@@ -22,6 +21,9 @@ const sunderlandData = {
       "number": 34,
       "nationality": "Switzerland",
       "age": 33,
+      "signedFrom": "Bayer Leverkusen",
+      "playingStyle": "A commanding deep-lying playmaker who dictates tempo from midfield. Exceptional long-range passing and set-piece delivery. Leads by example with tireless work rate and tactical intelligence. Known for his composure under pressure and ability to break up opposition attacks.",
+      "otherPositions": ["Defensive Midfielder", "Left-Back"],
       "funFacts": [
         "Club captain and described by manager Régis Le Bris as 'like a second coach on the pitch'",
         "Won the Under-17 World Cup with Switzerland in 2009",
@@ -41,6 +43,9 @@ const sunderlandData = {
       "number": 11,
       "nationality": "England",
       "age": 18,
+      "signedFrom": "Academy Graduate",
+      "playingStyle": "A dynamic box-to-box midfielder with remarkable maturity for his age. Combines technical skill with physicality and aggression. Excellent at arriving late in the box to score goals. Possesses a fierce competitive streak and never shies away from a challenge.",
+      "otherPositions": ["Central Midfielder", "Right Midfielder"],
       "funFacts": [
         "Sunderland's youngest ever player - debuted aged 15 years and 203 days in 2023",
         "Sunderland's youngest ever goalscorer AND youngest EFL Cup goalscorer in history",
@@ -60,6 +65,9 @@ const sunderlandData = {
       "number": 18,
       "nationality": "France",
       "age": 25,
+      "signedFrom": "Zenit St Petersburg (loan made permanent)",
+      "playingStyle": "A powerful and pacy striker who excels at running in behind defences. Clinical finisher with either foot and dangerous in the air. Works hard off the ball to press defenders and create turnovers. Combines strength with surprising technical ability.",
+      "otherPositions": ["Left Winger", "Right Winger"],
       "funFacts": [
         "Of Haitian and Malagasy descent - considering representing Haiti internationally",
         "Became first player in Premier League history to score in first three home games for a newly promoted team",
@@ -79,6 +87,9 @@ const sunderlandData = {
       "number": 7,
       "nationality": "Ivory Coast",
       "age": 23,
+      "signedFrom": "Brighton & Hove Albion",
+      "playingStyle": "An explosive winger with blistering pace and direct dribbling style. Takes on defenders with confidence and creates chances through individual brilliance. Excellent at cutting inside onto his stronger foot to shoot or pick a pass. Relentless work rate in both attack and defence.",
+      "otherPositions": ["Right Winger", "Left Winger", "Attacking Midfielder"],
       "funFacts": [
         "Won Africa Cup of Nations 2024 with Ivory Coast - hosts and eventual champions",
         "Man of the Match in AFCON final - assisted BOTH goals in 2-1 win over Nigeria",
@@ -98,6 +109,9 @@ const sunderlandData = {
       "number": 32,
       "nationality": "Northern Ireland",
       "age": 23,
+      "signedFrom": "Linfield",
+      "playingStyle": "A modern full-back who combines defensive solidity with attacking threat. Quick and athletic with excellent recovery pace. Delivers dangerous crosses and isn't afraid to overlap and get into the box. Strong in one-on-one duels and reads the game intelligently.",
+      "otherPositions": ["Left-Back", "Right Wing-Back", "Centre-Back"],
       "funFacts": [
         "Northern Ireland captain at just 23 years old",
         "Joined Sunderland from Linfield for just £150,000 in January 2022 - incredible bargain",
@@ -117,6 +131,9 @@ const sunderlandData = {
       "number": 1,
       "nationality": "England",
       "age": 25,
+      "signedFrom": "Academy Graduate",
+      "playingStyle": "A commanding shot-stopper with quick reflexes and excellent positioning. Dominates his penalty area and organises the defence vocally. Good distribution with both feet, comfortable playing out from the back. Performs well in high-pressure situations and makes crucial saves.",
+      "otherPositions": [],
       "funFacts": [
         "Homegrown talent - born in North Shields and joined academy as a youngster",
         "Following in footsteps of Jordan Pickford at Sunderland",
@@ -136,6 +153,9 @@ const sunderlandData = {
       "number": 5,
       "nationality": "Northern Ireland",
       "age": 26,
+      "signedFrom": "Arsenal",
+      "playingStyle": "A dominant aerial presence who wins the majority of his duels. Strong in the tackle and excellent at reading danger. Comfortable on the ball and capable of playing progressive passes out of defence. A leader at the back who marshals the defensive line effectively.",
+      "otherPositions": ["Right-Back"],
       "funFacts": [
         "Arsenal academy product but never made a first-team appearance for the Gunners",
         "Joined Arsenal aged just 8 years old",
@@ -155,6 +175,9 @@ const sunderlandData = {
       "number": 28,
       "nationality": "France",
       "age": 25,
+      "signedFrom": "Roma",
+      "playingStyle": "A technically gifted playmaker with exceptional vision and passing range. Pulls the strings from central midfield with clever movement and quick feet. Excels at finding pockets of space and playing incisive through balls. Small in stature but tenacious in winning the ball back.",
+      "otherPositions": ["Attacking Midfielder", "Defensive Midfielder"],
       "funFacts": [
         "Signed from Roma for £18m in summer 2025",
         "Known by Régis Le Bris from his time at Lorient where Le Bris was manager",
@@ -174,6 +197,9 @@ const sunderlandData = {
       "number": 12,
       "nationality": "Spain",
       "age": 20,
+      "signedFrom": "Real Sociedad B",
+      "playingStyle": "A lightning-quick striker who terrorises defences with his pace and movement. Excels at running the channels and stretching backlines. Works tirelessly to press and harass defenders. Still developing his finishing but shows excellent instincts in the box.",
+      "otherPositions": ["Left Winger", "Right Winger"],
       "funFacts": [
         "Spanish Under-21 international",
         "Joined from Real Sociedad's B team in 2023",
@@ -193,6 +219,9 @@ const sunderlandData = {
       "number": 22,
       "nationality": "Netherlands",
       "age": 22,
+      "signedFrom": "NEC Nijmegen",
+      "playingStyle": "A tall, commanding goalkeeper with excellent distribution. Very comfortable with the ball at his feet and can play as a sweeper-keeper. Calm and composed presence who rarely panics under pressure. Strong shot-stopper with good reactions and positioning.",
+      "otherPositions": [],
       "funFacts": [
         "Signed from NEC Nijmegen for up to £11.5m - expensive for a goalkeeper",
         "Netherlands Under-21 international",
@@ -212,6 +241,9 @@ const sunderlandData = {
       "number": 3,
       "nationality": "England",
       "age": 23,
+      "signedFrom": "Tottenham Hotspur",
+      "playingStyle": "An athletic and energetic full-back who loves to get forward. Possesses electric pace and excellent stamina to bomb up and down the flank. Strong in the tackle and quick to recover when caught out of position. Delivers quality crosses into the box.",
+      "otherPositions": ["Left Wing-Back", "Left Midfielder"],
       "funFacts": [
         "Tottenham academy product who never made a senior appearance for Spurs",
         "Joined Sunderland permanently in 2021 after initial loan",
@@ -227,10 +259,13 @@ const sunderlandData = {
     },
     {
       "name": "Luke O'Nien",
-      "position": "Centre-Back / Midfielder",
+      "position": "Centre-Back",
       "number": 13,
       "nationality": "England",
       "age": 30,
+      "signedFrom": "Wycombe Wanderers",
+      "playingStyle": "The ultimate utility player who brings energy and commitment to any position. A natural leader who organises those around him. Never gives less than 100% and inspires teammates with his passion. Improved massively as a centre-back, combining physicality with surprising composure.",
+      "otherPositions": ["Right-Back", "Central Midfielder", "Right Midfielder", "Defensive Midfielder", "Right Winger"],
       "funFacts": [
         "Mr Versatile - has played almost every outfield position for Sunderland",
         "Club captain before Xhaka arrived, remains a key leader",
@@ -244,12 +279,5 @@ const sunderlandData = {
         "Always gives 100% regardless of position"
       ]
     }
-  ],
-  "nextFixture": {
-    "opponent": "Arsenal",
-    "date": "2026-01-11",
-    "time": "15:00",
-    "venue": "Stadium of Light",
-    "competition": "Premier League"
-  }
+  ]
 };
