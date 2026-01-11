@@ -4,7 +4,6 @@
   This file makes everything work:
   1. Updates the time every second
   2. Picks a random player and fun fact
-  3. Shows the next fixture
 */
 
 // ============================================
@@ -33,35 +32,6 @@ function updateTime() {
   // Find the HTML elements and update them
   document.getElementById('time').textContent = timeString;
   document.getElementById('date').textContent = dateString;
-}
-
-// ============================================
-// FIXTURE FUNCTIONS
-// ============================================
-
-function displayFixture() {
-  const fixture = sunderlandData.nextFixture;
-
-  // Format the date nicely
-  const fixtureDate = new Date(fixture.date + 'T' + fixture.time);
-  const dateOptions = {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long'
-  };
-  const formattedDate = fixtureDate.toLocaleDateString('en-GB', dateOptions);
-
-  // Build the HTML to display
-  // Using template literals (backticks) lets us write multi-line HTML easily
-  const fixtureHTML = `
-    <span class="fixture-opponent">vs ${fixture.opponent}</span>
-    <span class="fixture-venue">${fixture.venue}</span><br>
-    ${formattedDate} at ${fixture.time}
-    <span class="fixture-competition">${fixture.competition}</span>
-  `;
-
-  // Put it in the page
-  document.getElementById('fixture').innerHTML = fixtureHTML;
 }
 
 // ============================================
@@ -96,7 +66,6 @@ function displayRandomPlayer() {
 
 // Run these functions when the page loads
 updateTime();           // Show time immediately
-displayFixture();       // Show fixture info
 displayRandomPlayer();  // Show random player
 
 // Update the time every second (1000 milliseconds)
