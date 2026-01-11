@@ -1,0 +1,207 @@
+/*
+  SUNDERLAND AFC NEW TAB - STYLES
+  Colors: Red (#EB172B), White (#FFFFFF), Black (#1A1A1A)
+*/
+
+/* Reset default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* The body creates the famous red and white stripes */
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* This creates the vertical stripes! */
+  /* repeating-linear-gradient draws stripes that repeat across the screen */
+  background: repeating-linear-gradient(
+    90deg,                    /* 90 degrees = vertical stripes */
+    #EB172B 0px,              /* Start with Sunderland red */
+    #EB172B 60px,             /* Red stripe is 60px wide */
+    #FFFFFF 60px,             /* Then white starts */
+    #FFFFFF 120px             /* White stripe is 60px wide, then repeat */
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main container - the white box in the center */
+.container {
+  background: rgba(255, 255, 255, 0.97);  /* Almost solid white, tiny bit transparent */
+  border-radius: 20px;                     /* Rounded corners */
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);  /* Shadow for depth */
+  text-align: center;
+  border: 4px solid #1A1A1A;               /* Black border */
+}
+
+/* Club Badge */
+.badge {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* TIME SECTION */
+.time-section {
+  margin-bottom: 30px;
+}
+
+.time {
+  font-size: 80px;
+  font-weight: 700;
+  color: #1A1A1A;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.date {
+  font-size: 18px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* FIXTURE SECTION */
+.fixture-section {
+  background: #1A1A1A;        /* Black background */
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.fixture-section h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #EB172B;             /* Red text */
+  margin-bottom: 12px;
+}
+
+.fixture-details {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.fixture-opponent {
+  font-size: 24px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.fixture-venue {
+  color: #aaa;
+}
+
+.fixture-competition {
+  display: inline-block;
+  background: #EB172B;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* PLAYER SECTION */
+.player-section {
+  margin-bottom: 25px;
+}
+
+.player-section h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #EB172B;
+  margin-bottom: 15px;
+}
+
+.player-card {
+  background: linear-gradient(135deg, #EB172B 0%, #C41424 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 3px solid #1A1A1A;
+}
+
+.player-info {
+  margin-bottom: 15px;
+}
+
+.player-number {
+  display: block;
+  font-size: 48px;
+  font-weight: 800;
+  opacity: 0.3;
+  line-height: 1;
+}
+
+.player-name {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.player-position {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.player-details {
+  font-size: 14px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.player-detail {
+  margin: 0 10px;
+}
+
+.fun-fact {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 14px;
+  color: #999;
+  font-style: italic;
+}
+
+/* RESPONSIVE DESIGN - Adjusts for smaller screens */
+@media (max-width: 500px) {
+  .container {
+    padding: 25px;
+  }
+
+  .time {
+    font-size: 56px;
+  }
+
+  .player-name {
+    font-size: 22px;
+  }
+
+  .badge {
+    width: 70px;
+  }
+}

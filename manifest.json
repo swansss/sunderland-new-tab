@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Sunderland AFC New Tab",
+  "description": "Replace your new tab with a Sunderland AFC themed page featuring the time, next fixture, and player facts",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "icons": {
+    "128": "images/badge.svg"
+  }
+}
